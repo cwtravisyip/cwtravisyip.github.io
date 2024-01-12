@@ -66,6 +66,7 @@ div.grid {
     }
  
     &__image-wrapper {
+        width: 5fr
     }
  
     &__img {
