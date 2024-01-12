@@ -56,3 +56,22 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+ 
+    &__content-wrapper {
+    }
+ 
+    &__image-wrapper {
+    }
+ 
+    &__img {
+       display: block;
+       width: 100%;
+       height: auto;
+    }
+ }
+ 
