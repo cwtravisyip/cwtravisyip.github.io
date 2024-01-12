@@ -3,7 +3,12 @@ body {
     width: 70%;
 }
 
-nav div {
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     color:#5A7D7C;
