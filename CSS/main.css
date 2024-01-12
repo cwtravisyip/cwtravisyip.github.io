@@ -8,11 +8,13 @@ header {
     justify-content: space-between;
 }
 
-header div {
+header div a {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     color:#5A7D7C;
+    display: inline;
 }
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
