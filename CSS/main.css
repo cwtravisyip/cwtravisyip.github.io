@@ -59,7 +59,7 @@ ul.posts li {
 
 div.grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 5fr 9fr;
     grid-gap: 3rem;
  
     &__content-wrapper {
