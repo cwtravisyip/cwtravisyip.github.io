@@ -66,7 +66,7 @@ div.grid {
     }
  
     &__image-wrapper {
-        width: 40%;
+        grid-column: 5 / 16;
     }
  
     &__img {
