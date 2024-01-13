@@ -6,7 +6,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 header div a {
@@ -59,15 +59,13 @@ ul.posts li {
 
 div.grid {
     display: grid;
-    grid-template-columns:repeat(16, 1fr);
+    grid-template-columns: 7fr 9fr;
     grid-gap: 3rem;
  
     &__content-wrapper {
-        width: 1 / 10
     }
  
     &__image-wrapper {
-        grid-column: 1 / 8
     }
  
     &__img {
