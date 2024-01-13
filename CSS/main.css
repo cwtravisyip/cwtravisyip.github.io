@@ -24,7 +24,7 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 a {
     text-decoration: none;
@@ -59,14 +59,15 @@ ul.posts li {
 
 div.grid {
     display: grid;
-    grid-template-columns: 5fr 9fr;
+    grid-template-columns:repeat(16, 1fr);
     grid-gap: 3rem;
  
     &__content-wrapper {
+        width: 9fr
     }
  
     &__image-wrapper {
-        width: 5fr
+        width: 7fr
     }
  
     &__img {
