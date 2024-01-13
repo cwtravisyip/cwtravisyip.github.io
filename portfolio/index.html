@@ -6,5 +6,18 @@ title: Travis Yip | Portfolio
 	<h1 class="resume">Previous Work</h1>
 
 	<!-- Previous Work List -->
+	{% for work in site.portfolio %}
+	<a href="{{ post.url }}"></a>
+			<div class="grid__impage-wrapper" style="background-color:#555555">
 
+			</div>
+
+			<div class="grid__content-wrapper" style="background-color:#EEEEEE">
+				<h1 style="font-size:1em;font-weight:bold;text-align:center;color:#595959;margin-top:10%">
+					{{ work.title }}
+				</h1>
+				<p>{{work.subtitle}}</p>
+			</div>
+	</a>
+	{% endfor %}
 </div><!-- /.textchunk -->
