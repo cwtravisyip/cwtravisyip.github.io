@@ -2,7 +2,7 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-
+/* The style for the header navigation and the footer list*/
 header {
     display: flex;
     justify-content: space-between;
@@ -26,6 +26,13 @@ nav ul li, footer ul li {
     display: inline;
     margin-left: 20px;
 }
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+/* Style sheet for a tags */
 a {
     text-decoration: none;
     color: #999;
@@ -33,20 +40,34 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Style sheet for heading */
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+
+/* Style sheet for resume*/
+h1.resume{
+    font-size: 2.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color:#595959;
+    border-bottom: 1px solid #d5d5d5;
+}
+h2.resume{
+    font-size: 2em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color:#595959;
+}
+
+/* */
 p {
     font-size: 1em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
     color: #595959";
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
+
 
 ul.posts { 
     margin: 20px auto 40px; 
