@@ -8,11 +8,11 @@ title: Travis Yip | Portfolio
 	<!-- Previous Work List -->
 	{% for work in site.portfolio %}
 	<div class="portfolio">
-		<div class="grid__impage-wrapper" onclick="location.href={{ work.url }}">
-			<img src="{{work.img_src}}">
+		<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
+			<img src="{{work.img_src}}" alt="">
 		</div>
 
-		<div class="grid__content-wrapper" style="background-color:#EEEEEE">
+		<div class="portfolio__content-wrapper" style="background-color:#EEEEEE">
 			<a href="{{work.url}}">
 				<h1 style="font-size:1em;font-weight:bold;text-align:left;color:#595959;margin-top:5%">
 					{{ work.title }}
