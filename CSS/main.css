@@ -32,6 +32,10 @@ footer {
     font-size: .8em;
 }
 
+li {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
 /* Style sheet for a tags */
 a {
     text-decoration: none;
