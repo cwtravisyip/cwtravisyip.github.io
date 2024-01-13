@@ -78,7 +78,7 @@ a:hover {
 
 /* Style sheet for heading */
 h1 {
-    font-size: 3em;
+    font-size: 1.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
@@ -108,7 +108,7 @@ p {
 
 ul.posts { 
     margin: 20px auto 40px; 
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 ul.posts li {
