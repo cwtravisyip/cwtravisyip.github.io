@@ -51,7 +51,7 @@ li {
         grid-gap: 5%;
     }
 
-    div.portfolio > div.grid__image-wrapper {
+    div.portfolio__image-wrapper {
     }
 
     div.portfolio > div img {
@@ -60,7 +60,7 @@ li {
     height: auto;
     }
 
-    div.portfolio > div.grid__content-wrapper {
+    div.portfolio__content-wrapper {
         padding-right: 40px;
         padding-left: 40px;
     }
