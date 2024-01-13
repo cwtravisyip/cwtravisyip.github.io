@@ -50,6 +50,7 @@ li {
         grid-template-columns: 1fr 500px;
         grid-gap: 5%;
         border-bottom: 1px solid #d5d5d5;
+        margin-top:5px
     }
 
     div.portfolio__image-wrapper {
@@ -62,8 +63,8 @@ li {
     }
 
     div.portfolio__content-wrapper {
-        padding-right: 40px;
-        padding-left: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
 /* */
