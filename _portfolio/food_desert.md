@@ -3,6 +3,7 @@ layout: default
 title: Food Desert Prediction
 subtitle: This is a lorem ipsum subtitle
 date: 2024-01-13
+img_scr: /images/porfolio_of_work/240131_food_desert_map.png
 ---
 ![Food Desert Distribution](/images/porfolio_of_work/240131_food_desert_map.png)
 
