@@ -7,17 +7,17 @@ title: Travis Yip | Portfolio
 
 	<!-- Previous Work List -->
 	{% for work in site.portfolio %}
-	<a href="{{ post.url }}"></a>
-			<div class="grid__impage-wrapper" style="background-color:#555555">
+	<div class="portfolio">
+		<div class="grid__impage-wrapper" onclick="location.href={{ work.url }}">
+			<img src="{{work.img_src}}">
+		</div>
 
-			</div>
-
-			<div class="grid__content-wrapper" style="background-color:#EEEEEE">
-				<h1 style="font-size:1em;font-weight:bold;text-align:center;color:#595959;margin-top:10%">
-					{{ work.title }}
-				</h1>
-				<p>{{work.subtitle}}</p>
-			</div>
-	</a>
+		<div class="grid__content-wrapper" style="background-color:#EEEEEE">
+			<h1 style="font-size:1em;font-weight:bold;text-align:left;color:#595959;margin-top:5%">
+				{{ work.title }}
+			</h1>
+			<p>{{work.subtitle}}</p>
+		</div>
+	</div>
 	{% endfor %}
 </div><!-- /.textchunk -->
