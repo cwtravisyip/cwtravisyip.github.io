@@ -70,13 +70,13 @@ div.grid__content-wrapper {
 }
 
 div.grid__image-wrapper {
+    grid-column-start: 8;
+    grid-column-end: 17;
 }
 
 div img {
    display: block;
    width: auto;
    height: auto;
-   grid-column-start: 1;
-   grid-column-end: 8;
 }
  
