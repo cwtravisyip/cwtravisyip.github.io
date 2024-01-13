@@ -9,6 +9,12 @@ header {
     margin-right: 0px;
 }
 
+div {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    line-height: 1.4em;
+    color:#595959;
+}
+
 header div a {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 2em;
