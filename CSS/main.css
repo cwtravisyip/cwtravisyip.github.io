@@ -63,6 +63,7 @@ div.grid {
     grid-gap: 3rem;
  
     &__content-wrapper {
+        margin: 20px;
     }
  
     &__image-wrapper {
