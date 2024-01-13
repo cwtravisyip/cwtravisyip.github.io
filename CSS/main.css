@@ -59,14 +59,14 @@ ul.posts li {
 
 div.grid {
     display: grid;
-    grid-template-columns: 7fr 9fr;
+    grid-template-columns: repeat(16,1fr);
     grid-gap: 0px;
  
  }
 
 div.grid__content-wrapper {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 div.grid__image-wrapper {
@@ -76,6 +76,7 @@ div img {
    display: block;
    width: auto;
    height: auto;
-   grid-column: 1 / 8
+   grid-column-start: 1;
+   grid-column-end: 8;
 }
  
