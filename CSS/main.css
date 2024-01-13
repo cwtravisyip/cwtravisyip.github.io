@@ -60,20 +60,22 @@ ul.posts li {
 div.grid {
     display: grid;
     grid-template-columns: 7fr 9fr;
-    grid-gap: 0rem;
+    grid-gap: 0px;
  
-    &__content-wrapper {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
- 
-    &__image-wrapper {
-    }
- 
-    &__img {
-       display: block;
-       width: 7fr;
-       height: auto;
-    }
  }
+
+div.grid__content-wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+div.grid__image-wrapper {
+}
+
+div img {
+   display: block;
+   width: auto;
+   height: auto;
+   grid-column: 1 / 8
+}
  
