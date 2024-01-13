@@ -49,15 +49,15 @@ h1 {
 
 /* Style sheet for resume*/
 h1.resume {
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color:#595959;
     border-bottom: 1px solid #d5d5d5;
     margin-bottom:0px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 h2.resume {
-    font-size: 2em;
+    font-size: 1em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color:#595959;
 }
