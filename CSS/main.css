@@ -34,6 +34,7 @@ footer {
 
 li {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    line-height: 1.4em;
 }
 
 /* Style sheet for a tags */
@@ -74,7 +75,6 @@ p {
     line-height: 1.4em;
     color: #595959";
 }
-
 
 ul.posts { 
     margin: 20px auto 40px; 
