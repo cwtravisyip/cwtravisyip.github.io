@@ -49,6 +49,7 @@ li {
         display: grid;
         grid-template-columns: 1fr 500px;
         grid-gap: 5%;
+        border-bottom: 1px solid #d5d5d5;
     }
 
     div.portfolio__image-wrapper {
