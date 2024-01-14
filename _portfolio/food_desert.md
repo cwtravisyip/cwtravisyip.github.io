@@ -6,7 +6,7 @@ date: 2024-01-13
 img_src: /images/porfolio_of_work/240113food_desert_map.png
 ---
 
-<h1>Food Desert Prediction<>
+<h1>Food Desert Prediction</h1>
 
 ![Food Desert Distribution](/images/porfolio_of_work/240113food_desert_map.png)
 
