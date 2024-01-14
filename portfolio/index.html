@@ -9,7 +9,7 @@ title: Travis Yip | Portfolio
 	{% for work in site.portfolio %}
 	<div class="portfolio" style="margin-bottom:10px;margin-top:10px" >
 		<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
-			<img src="{{work.img_src}}" alt="" class="center">
+			<a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
 		</div>
 
 		<div class="portfolio__content-wrapper">
