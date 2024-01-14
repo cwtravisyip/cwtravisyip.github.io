@@ -6,3 +6,6 @@ permalink: /blog/:year/:month/:day/:title
 collections:
   portfolio:
     output: true
+
+# Google Analytics
+google_analytics: G-0BEDED78PR
