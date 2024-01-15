@@ -4,18 +4,15 @@ markdown: kramdown
 # blog post link
 permalink: /blog/:year/:month/:day/:title
 
-# previous work in portfolio page
-permalink: /portfolio/:path
 
-# collections:
-#   portfolio:
-#     output: true
-
+collections:
 # # Work in Progress permalink
-permalink: /wips/:path
-# collections:
-#   wips:
-#     output: true
+  wips:
+    output: true
+# portfolio folder
+  portfolio:
+    output: true
+  
 
 # Google Analytics
 google_analytics: G-0BEDED78PR
