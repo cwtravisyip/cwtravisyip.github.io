@@ -10,7 +10,9 @@ collections:
     output: true
 
 # Work in Progress permalink
-permalink: /wips/:title
+collections:
+  wips:
+    output: true
 
 # Google Analytics
 google_analytics: G-0BEDED78PR
