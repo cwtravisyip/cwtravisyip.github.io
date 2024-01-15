@@ -3,7 +3,7 @@ layout: post
 title: Regional GDP in England and Wales
 subtitle: London's recovery from the COVID-19 outpaced the rest of England and Wales
 date: 2024-01-15
-img_src: /images/thumbnail.jpg
+img_src: /images/thumbnail.JPG
 ---
 
 ![Food Desert Distribution](/images/porfolio_of_work/240113food_desert_map.png)
