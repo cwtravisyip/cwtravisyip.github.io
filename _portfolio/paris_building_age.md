@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Paris Urban Structure
 subtitle: This is a lorem ipsum subtitle
 date: 2024-01-13
