@@ -1,12 +1,10 @@
 ---
-layout: default
+layout: post
 title: Regional GDP in England and Wales
 subtitle: 
-date: 2024-01-13
+date: 2024-01-15
 img_src: /images/porfolio_of_work/240113food_desert_map.png
 ---
-
-<h1>Food Desert Prediction</h1>
 
 ![Food Desert Distribution](/images/porfolio_of_work/240113food_desert_map.png)
 
