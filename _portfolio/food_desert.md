@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Food Desert Prediction
-subtitle: This is a lorem ipsum subtitle
+subtitle: Estimating the location of food desert (at the census tract level) using social-demographic data
 date: 2024-01-13
 img_src: /images/porfolio_of_work/240113food_desert_map.png
 ---
