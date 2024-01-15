@@ -5,7 +5,7 @@ title: Travis Yip | Portfolio
 <div class="textchunk">
 	<!-- Work in Progress -->
 	{% for work in site.wips %}
-	<h1 class="resume">Previous Work</h1>
+	<h1 class="resume">Work in Progress</h1>
 	<div class="portfolio" style="margin-bottom:10px;margin-top:10px" >
 		<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
 			<a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
@@ -24,7 +24,7 @@ title: Travis Yip | Portfolio
 	<div style="border-bottom: 1px solid #d5d5d5"></div>
 	{% endfor %}
 
-	
+
 	<!-- Previous Work List -->
 	<h1 class="resume">Previous Work</h1>
 	{% for work in site.portfolio %}
