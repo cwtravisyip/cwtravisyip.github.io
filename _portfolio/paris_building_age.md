@@ -12,10 +12,4 @@ This is the first paragraph. The distribution of food desert is fairly random. H
 
 In this essay, we will try to attempt at diagnosing the determining factor leading to the formation of food desert.
 
-<span style="color:#777777">
-<em>
-    <b>Author's Note</b>
-
-    For detailed methodologies of the production of the map, including the data source and manipulation, you can visit the respective (GitHub Repository)[https://github.com/cwtravisyip/paris_urban_data_visualisation] for details.
-</em>
-</span>
+<span style="color:#777777">*Author's Note:<br>For detailed methodologies of the production of the map, including the data source and manipulation, you can visit the respective (GitHub Repository)[https://github.com/cwtravisyip/paris_urban_data_visualisation] for details.*</span>
