@@ -3,9 +3,28 @@ layout: default
 title: Travis Yip | Portfolio
 ---
 <div class="textchunk">
+	<!-- Work in Progress -->
+	{% for work in site.wips %}
 	<h1 class="resume">Previous Work</h1>
+	<div class="portfolio" style="margin-bottom:10px;margin-top:10px" >
+		<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
+			<a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
+		</div>
+
+		<div class="portfolio__content-wrapper">
+			<a href="{{work.url}}" style="color:#595959">
+				<p>
+					<b>{{ work.title }}</b><br>
+					{{work.subtitle}}
+				</p>
+			</a>
+
+		</div>
+	</div>
+	<div style="border-bottom: 1px solid #d5d5d5"></div>
 
 	<!-- Previous Work List -->
+	<h1 class="resume">Previous Work</h1>
 	{% for work in site.portfolio %}
 	<div class="portfolio" style="margin-bottom:10px;margin-top:10px" >
 		<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
