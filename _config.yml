@@ -1,8 +1,10 @@
 name: Travis Yip
 markdown: kramdown
 
+# blog post link
 permalink: /blog/:year/:month/:day/:title
 
+# previous work in portfolio page
 collections:
   portfolio:
     output: true
