@@ -9,5 +9,8 @@ collections:
   portfolio:
     output: true
 
+# Work in Progress permalink
+permalink: /wips/:title
+
 # Google Analytics
 google_analytics: G-0BEDED78PR
