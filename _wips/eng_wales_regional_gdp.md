@@ -4,7 +4,7 @@ title: Regional GDP in England and Wales
 subtitle: London's recovery from the COVID-19 outpaced the rest of England and Wales
 date: 2024-01-15
 img_src: /images/porfolio_of_work/regional_gdp_01.png
-tags: #dataViz
+tags: #dataViz,
 ---
 
 ![Latest Quarter GDP (Value-Added) by Industry](/images/porfolio_of_work/regional_gdp_01.png)
