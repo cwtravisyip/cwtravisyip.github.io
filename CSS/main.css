@@ -68,13 +68,20 @@ li {
 /* */
 
 /* Style sheet for a tags */
-a {
+li a {
     text-decoration: none;
     color: #999;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
+a {
+    text-decoration: none;
+    color: #5A7D7C;
+}
+
 
 /* Style sheet for heading */
 h1 {
