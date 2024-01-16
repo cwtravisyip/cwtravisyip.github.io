@@ -10,7 +10,7 @@ tags: dataViz
 ![Latest Quarter GDP (Value-Added) by Industry](/images/porfolio_of_work/regional_gdp_02.png)
 Preliminary analysis
 
-Using the GDP index provided by the ONS, we can show that London's economy has fared better compared to the rest of England and Wales in the recovery from COVID-19. This is consistent with the general report on the regional disparities in economic development seen across the country. While it is generally understood that the servicing sector contributes to a higher share of the economy in the region, the latest quarterly figure also shows that London is the only region where the construction sector contributes a higher share to the regional GDP compared to the production industry as a whole.
+Data from the GDP index published by the ONS shows that (London's economy has fared better compared to the rest of England and Wales in the recovery from COVID-19)[https://www.youtube.com/watch?v=Ype43hG6lN8&t=620s]. This is consistent with the general report on the regional disparities in economic development seen across the country. While it is generally understood that the servicing sector contributes to a higher share of the economy in the region, the latest quarterly figure also shows that London is the only region where the construction sector contributes a higher share to the regional GDP compared to the production industry as a whole.
 
 In order to dissect the data to see which industry contributes to the highest share of growth, we need to consider their individual growth rate and their value-added to the economy relative to the growth of the economy.
 
