@@ -154,3 +154,10 @@ div.grid__content-wrapper {
     grid-column-end: 17;
 }
 
+code {
+    padding: .2em, .4em;
+    background-color: #d5d5d5;
+    font-family: 'Courier New', monospace;
+    color:#5A7D7C
+
+}

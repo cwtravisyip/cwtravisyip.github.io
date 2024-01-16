@@ -15,7 +15,11 @@ title: Travis Yip | Portfolio
 			<a href="{{work.url}}" style="color:#595959">
 				<p>
 					<b>{{ work.title }}</b><br>
-					{{work.subtitle}}
+					{{work.subtitle}}<br>
+					<!-- add tags -->
+					{% for tag in work.tags | split: ', ' %}
+						<code>tag</code>		
+					{% endfor %}
 				</p>
 			</a>
 
