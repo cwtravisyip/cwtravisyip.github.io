@@ -41,6 +41,10 @@ title: Travis Yip | Portfolio
 				<p>
 					<b>{{ work.title }}</b><br>
 					{{work.subtitle}}
+					<!-- add tags -->
+					{% for tag in work.tags | split: ', ' %}
+						<code>{{tag}}</code>		
+					{% endfor %}
 				</p>
 			</a>
 
