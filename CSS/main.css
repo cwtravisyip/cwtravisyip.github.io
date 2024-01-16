@@ -158,7 +158,8 @@ code {
     padding: .2em, .4em;
     background-color: #d5d5d5;
     font-family: 'Courier New', monospace;
+    font-size: .8em;
     color:#5A7D7C;
-    border-radius: 5%;
+    border-radius: 10%;
 
 }
