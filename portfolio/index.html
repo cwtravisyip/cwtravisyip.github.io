@@ -17,7 +17,7 @@ title: Travis Yip | Portfolio
 					<b>{{ work.title }}</b><br>
 					{{work.subtitle}}<br><br>
 					<!-- add tags -->
-					{% for tag in work.tags | split: ', ' %}
+					{% for tag in work.tags | split: ' ' %}
 						<code>{{ tag }}</code>		
 					{% endfor %}
 				</p>
@@ -42,7 +42,7 @@ title: Travis Yip | Portfolio
 					<b>{{ work.title }}</b><br>
 					{{work.subtitle}}<br><br>
 					<!-- add tags -->
-					{% for tag in work.tags | split: ', ' %}
+					{% for tag in work.tags | split: ' ' %}
 						<code>{{ tag }}</code>		
 					{% endfor %}
 				</p>
