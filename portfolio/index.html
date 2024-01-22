@@ -29,8 +29,9 @@ title: Travis Yip | Portfolio
 
 
 	<!-- Previous Work List -->
-	<h1 class="resume">Previous Work</h1>
-	{% for work in site.portfolio %}
+	<h1 class="resume">Latest Work</h1>
+	{% assign sorted_pages = site.portfolio | sort: 'date' | reverse  %}
+	{% for work in sorted_pages %}
 	<div class="portfolio" style="margin-bottom:10px;margin-top:4s0px" >
 		<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
 			<a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
