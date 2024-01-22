@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Travis Data Story</title>
+	<link href="http://cwtravisyip.github.io/portfolio/atom.xml" rel="self"/>
+	<link href="http://hankquinlan.github.io/portfolio"/>
+	<updated>2024-01-22T21:09:29+00:00</updated>
+	<id>http://cwtravisyip.github.io/portfolio</id>
+	<author>
+		<name>Travis Yip</name>
+		<email>cwtravisyip@gmail.com</email>
+	</author>
+
+	
+		<entry>
+			<title>Brunch at HoKo</title>
+			<link href="http://hankquinlan.github.io/portfolio/blog/2024/01/21/blog-2"/>
+			<updated>Brunch at HoKo</updated>
+			<id>http://cwtravisyip.github.io/blog/2024/01/21/blog-2</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/images/blog/20240121.png&quot; alt=&quot;Hong Kong Style French Toast and Pork Chop over Saucy Noodles&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This weekend, I went to HoKo in Shoreditch. It was the first time I visited a Hong Kong-style diner since moving out of the city. I was not particularly excited about it though I had to admit. If you’ve ever been to a Hong Kong diner, you would know that pressure on you the moment you step into the diner and the staff  “attending” to you. It is not a place for catching up over a Saturday brunch. Nestled in the hipster hotspot of Shoreditch, I was also not sure if it was going to be an authentic experience.&lt;/p&gt;
+
+&lt;p&gt;To my surprise, they didn’t offer an extensive choice on their menu as most diners back home would. Instead, there were only 4 options for the mains. All three of us ended up getting the same fried pork chop for the mains and shared a Hong Kong-style French toast with a small side of fried tofu. I do have to say I was impressed by the food. The pork cutlet was pretty crispy. The sauce mixed into the noodles has a good balance of flavour. I have nothing to complain about. The food was prepared as if I were back home.&lt;/p&gt;
+
+&lt;p&gt;But that’s really bout it. Somehow, being away from home for over 4 months now, I never really had a strong urge to go to a dim sum place for siu mais. I wonder if this is genuinely because I don’t have that craving and I’m not ready to splurge and risk getting disappointed.&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>New Year New Me (for once)</title>
+			<link href="http://hankquinlan.github.io/portfolio/blog/2024/01/13/site-launch"/>
+			<updated>New Year New Me (for once)</updated>
+			<id>http://cwtravisyip.github.io/blog/2024/01/13/site-launch</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/images/blog/20240113.JPG&quot; alt=&quot;Day Trip to Winchester&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Every year, this puzzles me. I was rarely a systematic person. The only list I can count myself on is the grocery list I make. Even that, it’s usually a scribble of food categories that I needed rather than a specific food item. It would be “fruit” rather than apples; “Protein” instead of chicken or pork chop.&lt;/p&gt;
+
+&lt;p&gt;I have been struggling to make any progress in terms of my careers journey. Ever since I completed my last internship a year ago, I felt that I was prepared for a data job but I never come close to getting an interview. And next thing I know, I found myself in London, back to the city that I saw myself living in, hoping that the University environment and the course I enrolled into would be good stepping stones working towards that goal. I started off strong, taking advantage of the resources and the advisory careers centre. But soon, I found myself getting bogged down again, never coming close to any job, not even a part-time job that gives me extra earning to enjoy what London has to offer.&lt;/p&gt;
+
+&lt;p&gt;And so this year, I threw this massive goal of: get a data job. This is defintely a big jump, of course. So I had to break it down into different SMART goals (Thank You AIESEC for teaching me that). This is also in part, thanks to a conversation that I had with a dear friend who told me about her goals for the year. (Thanks Anj:) This site that you are reading my blog post right now is part of the result. I made a vow to myself, that I will discover a data story once a month, twice if possible, and publish it. I have been doing something similar in the past, going back to previous I did for my Bachelor’s and publishing parts of them onto GitHub. However, I never set myself up to a routine of creating something new. Hence, I decided to start afresh and create this website as a way to hold myself accountable.&lt;/p&gt;
+
+&lt;p&gt;And hopefully, this will somehow pay off and get me close to landing a data job in the coming year.&lt;/p&gt;
+</content>
+		</entry>
+	
+
+</feed>

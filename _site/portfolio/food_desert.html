@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Food Desert Prediction</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/CSS/main.css">
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0BEDED78PR"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-0BEDED78PR');
+		</script>
+	</head>
+	<body>
+		<header>
+			<div>
+				<a href="/">TRAVIS YIP</a>
+			</div>
+			<!-- MAIN NAVIGATION -->
+			<nav>
+				<ul>
+					<li><a href="/portfolio">Portfolio</a></li>
+					<li><a href="/resume">Resume</a></li>
+					<li><a href="/blog">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+        <div class="container">
+        
+            <h1>Food Desert Prediction</h1>
+<p class="meta">Last Updated: 16 Jan 2024</p>
+
+<div class="post">
+  <p><img src="/images/porfolio_of_work/240113food_desert_map.png" alt="Food Desert Distribution" /></p>
+
+<p>Commonly known as food deserts, <em>Low-Income and Low-Access Tracts</em> are defined by the US Department of Agriculture as census tracts “<a href="https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/">characterised by at least 500 people and/or 33% of the tract population residing more than 1 mile from a supermarket or large grocery in urban areas, and more than 10 miles in rural area</a>”. Due to the lack of access to healthy foods, food desert residents are exposed to a higher risk of chronic diseases. Coupled with the income status residents often find themselves in, it creates a vicious cycle that <a href="https://www.youtube.com/watch?v=Rd8J-9uUnfc">traps residents in a poverty cycle</a>.</p>
+
+<p>The USDA has conducted three series of <a href="https://www.ers.usda.gov/data-products/food-access-research-atlas/">Food Access Research Atlas</a> since 2006. As detailed in the documentation, the classification of census tracts into food deserts or not requires a series of census data and a complete list of fully operational food outlets that represent sources of affordable and nutritious food. However, the exact methodology has not been published. Given the data source employed, however, one could reasonably guess that sptial analysis was employed where each household is mapped to its closest food outlet and the distance is computed using conventional GIS programmes. This is of course a lengthy process and the reliability of the food outlet data could be questioned, particularly after the COVID-19 pandemic.</p>
+
+<p>This is where the machine learning methods may come into play. The American Community Survey provides an ongoing data source that enables more time-sensitive estimation of the location of food deserts. Using a myriad of social-demographic data and geospatial data, there is a potential to derive patterns for identifying food deserts.  Naturally, these machine learning models should take into account income level and spatial data of some sort. One natural contender would be the area of the census tract.</p>
+
+<p>Using a simple decision tree algorithm where the census tract is segmented into two groups by iteratively evaluating them using a set of true or false questions, we yielded a model that can correctly classify 33% of previously unseen food deserts. No doubt, this result shows that the machine learning methods are not up for the task. Using a more complex model, such as a random forest does not improve the performance either.</p>
+
+<p>Nonetheless, the result from the decision tree shows that income and census tract size are the two most important features to consider when predicting the prevalence of food deserts. Moving forward, we may consider including other social-demographic variables and consider different ways to engineer features that provide better input and proxies that help segregate food deserts from non-food deserts.</p>
+
+<p><span style="color:#8F8F8F"><em>Author’s Note:<br />For detailed methodologies for data acquisition, manipulation and the training of machine learning models, you can visit the respective <a href="https://github.com/cwtravisyip/USDA_food_desert">GitHub Repository</a>.</em></span></p>
+
+</div>
+            
+        </div><!-- /.container -->
+		<footer>
+    		<ul>
+        		<li><a href="mailto:cwtravisyip@gmail.com" target="_blank">Email</a></li>
+        		<li><a href="https://github.com/cwtravisyip" target="_blank">GitHub</a></li>
+				<li><a href="https://linkedin.com/in/cwtravis" target="_blank">LinkedIn</a></li>
+				<li><a href="/privacy_note.html">Privacy Notice</a></li>
+			</ul>
+		</footer>
+	</style>
+	</body>
+</html>
