@@ -4,8 +4,9 @@ title: Travis Yip | Portfolio
 ---
 <div class="textchunk">
 	<!-- Work in Progress -->
-	{% for work in site.wips %}
 	<h1 class="resume">Work in Progress</h1>
+	{% for work in site.wips %}
+	
 	<div class="portfolio" style="margin-bottom:10px;margin-top:10px" >
 		<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
 			<a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
