@@ -5,7 +5,8 @@ title: Travis Yip | Portfolio
 <div class="textchunk">
 	<!-- Work in Progress -->
 	<h1 class="resume">Work in Progress</h1>
-	{% for work in site.wips %}
+	{% assign sorted_wips = site.wips | sort: 'date' | reverse  %}
+	{% for work in sorted_wips %}
 	
 	<div class="portfolio" style="margin-bottom:10px;margin-top:10px" >
 		<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
