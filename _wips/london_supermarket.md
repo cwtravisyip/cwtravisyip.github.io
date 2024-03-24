@@ -16,7 +16,7 @@ tags: interactive dataViz OSMdata
 </div>
 
 
-Using data from Open Street Map, the locations of all the supermarkets in London are aggregated at the Borough Level.
+Using data from Open Street Map (extracted on 21 Mar 2024), the locations of all the supermarkets in London are aggregated at the Borough Level.
 
 
 <span style="color:#8F8F8F">*Author's Note:<br>The methodology of the visualisation is yet to be published.*</span>
