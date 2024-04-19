@@ -22,5 +22,6 @@ tags: dataViz Tableau
 </script>
 </div>
 
+Heathrow Airport is a major European air traffice hub. As shown in the visualisation, most passengers are flying to and from continental Europe.
 
 <span style="color:#8F8F8F">*Author's Note:<br>The passenger number is simulated data. The number of passenger for each flight is assumed to be normally distributed at a mean of 200 and a standard deviation of 75.*</span>
