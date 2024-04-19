@@ -7,7 +7,6 @@ img_src: https://public.tableau.com/static/images/Lo/LondonHeathrowTrafficFlow-1
 tags: dataViz Tableau
 ---
 
-<div>
 <div class='tableauPlaceholder' id='viz1713564621090' style='position: relative'>
 <noscript>
     <a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonHeathrowTrafficFlow-17April2024&#47;Dashboard1&#47;1_rss.png' style='border: none' />
@@ -18,9 +17,7 @@ tags: dataViz Tableau
 </object>
 
 </div>                
-<script type='text/javascript'>                    var divElement = document.getElementById('viz1713564621090');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-</script>
-</div>
+
 
 Heathrow Airport is a major European air traffice hub. As shown in the visualisation, most passengers are flying to and from continental Europe.
 
