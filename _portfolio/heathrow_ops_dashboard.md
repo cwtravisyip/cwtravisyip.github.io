@@ -22,6 +22,10 @@ tags: dataViz Tableau
 </script>
 </div>
 
-Heathrow Airport is a major European air traffice hub. As shown in the visualisation, most passengers are flying to and from continental Europe.
+On 17 April 2024, there are 1341 scheduled commercial flights at London Health Airport (LHR). In total, there were 23 cancellations, out of which 10 flights were scheduled to operate between Heathrow and Western Asia, including the UAE. These cancellations are likely due to the extreme weather event in the area.
 
-<span style="color:#8F8F8F">*Author's Note:<br>The passenger number is simulated data. The number of passenger for each flight is assumed to be normally distributed at a mean of 200 and a standard deviation of 75.*</span>
+Most flights between London Heathrow were short-haul, with travel departing to/arriving from Europe. Over 40% of the flights were connected to destinations within the region. However, the US was the country with the most connections to Heathrow.
+
+Over two-thirds of the flights were delayed. Among arrivals, the delay rate was 36%. On the contrary, almost all departure flights were delayed with an average delay time of 40 minutes.
+
+<span style="color:#8F8F8F">*Author's Note:<br>The passenger number is simulated data. The number of passengers for each flight is assumed to be normally distributed at a mean of 200 and a standard deviation of 75. Since the passenger number is determined by the flight, passengers who were transiting through the airport with onward journey are double counted.*</span>
