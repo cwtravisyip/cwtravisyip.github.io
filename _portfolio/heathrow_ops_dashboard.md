@@ -22,10 +22,15 @@ tags: dataViz Tableau
 </script>
 </div>
 
-On 17 April 2024, there are 1341 scheduled commercial flights at London Health Airport (LHR). In total, there were 23 cancellations, out of which 10 flights were scheduled to operate between Heathrow and Western Asia, including the UAE. These cancellations are likely due to the extreme weather event in the area.
+On 17 April 2024, there are 1341 scheduled commercial flights at London Health Airport (LHR), connecting passengers to over 179 destinations. 
 
-Most flights between London Heathrow were short-haul, with travel departing to/arriving from Europe. Over 40% of the flights were connected to destinations within the region. However, the US was the country with the most connections to Heathrow.
+While there are some variations in the number of departing and arriving flights, they are by and large equivalent. Each aircraft is likely to turn around within the same day, constrained by the number of aircraft stands.
 
-Over two-thirds of the flights were delayed. Among arrivals, the delay rate was 36%. On the contrary, almost all departure flights were delayed with an average delay time of 40 minutes.
+In total, there were 23 cancellations, out of which 10 flights were scheduled to operate between Heathrow and Western Asia, including the UAE. These cancellations are likely due to the extreme weather event in the area.
+
+Most flights between London Heathrow were short-haul, with travel departing to/arriving from Europe. Over 40% of the flights were connected to destinations within the region. However, the US was the country with the most connections to Heathrow, contributing to over 260,000 daily passengers to Heathrow.
+
+Over two-thirds of the flights were delayed. Among arrivals, the delay rate was 36%. On the contrary, almost all departure flights were delayed with an average delay time of 40 minutes. All of the 15 flights departing for Eastern Asia were delayed by an average of over an hour.
+
 
 <span style="color:#8F8F8F">*Author's Note:<br>The passenger number is simulated data. The number of passengers for each flight is assumed to be normally distributed at a mean of 200 and a standard deviation of 75. Since the passenger number is determined by the flight, passengers who were transiting through the airport with onward journey are double counted.*</span>
