@@ -68,7 +68,7 @@ li {
 /* */
 
 /* Style sheet for a tags */
-li a {
+footer li a {
     text-decoration: none;
     color: #999;
 }
