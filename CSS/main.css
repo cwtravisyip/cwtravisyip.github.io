@@ -68,7 +68,12 @@ li {
 /* */
 
 /* Style sheet for a tags */
-li a {
+footer li a {
+    text-decoration: none;
+    color: #999;
+}
+
+nav ul li a {
     text-decoration: none;
     color: #999;
 }
