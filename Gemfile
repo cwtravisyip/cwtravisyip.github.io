@@ -7,6 +7,9 @@ source "https://rubygems.org"
 gem "webrick", "~> 1.8"
 
 
-gem 'jekyll', '~> 3.3'
+gem 'jekyll', '~> 3.9'
 
 gem 'kramdown-parser-gfm'
+
+# rss feed
+gem 'jekyll-feed'

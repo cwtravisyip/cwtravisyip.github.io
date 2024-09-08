@@ -16,3 +16,7 @@ collections:
 
 # Google Analytics
 google_analytics: G-0BEDED78PR
+
+# RSS feed
+plugins:
+  - jekyll-feed
