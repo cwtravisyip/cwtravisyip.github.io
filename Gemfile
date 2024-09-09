@@ -13,3 +13,6 @@ gem 'kramdown-parser-gfm'
 
 # rss feed
 gem 'jekyll-feed'
+
+# jekyll collection to parse rss feed
+# gem 'jekyll-collections' # potentially resolving .xml RSS feed conflicts

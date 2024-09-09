@@ -1,18 +1,6 @@
 name: Travis Yip
 markdown: kramdown
-
-# blog post link
-permalink: /blog/:year/:month/:day/:title
-
-
-collections:
-# # Work in Progress permalink
-  wips:
-    output: true
-# portfolio folder
-  portfolio:
-    output: true
-  
+author: Travis Yip
 
 # Google Analytics
 google_analytics: G-0BEDED78PR
@@ -20,3 +8,28 @@ google_analytics: G-0BEDED78PR
 # RSS feed
 plugins:
   - jekyll-feed
+
+# define blog post link
+permalink: /blog/:year/:month/:day/:title
+
+# set up collections
+collections:
+# Work in Progress permalink
+  wips:
+    output: true
+# portfolio folder
+  portfolio:
+    output: true
+# blog folder
+  blog:
+    output: true
+
+
+# define default RSS feed template
+feed:
+  # path: /feed.xml # use layout template to parse both portfolio and feed
+  categories:
+    - portfolio
+  collections:
+    - portfolio
+    # - post
