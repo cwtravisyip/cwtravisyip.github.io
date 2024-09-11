@@ -34,7 +34,7 @@ title: Travis Yip | Portfolio
 	<h1 class="resume">Latest Work</h1>
 	{% assign sorted_pages = site.posts | sort: 'date' | reverse  %}
 	{% for work in sorted_pages %}
-	{% unless work.path contains '/_portfolio/[0-9]{4}-[0-9]{2}-[0-9]{2}' %} <!--Filter out the blog post-->
+	{% unless work.name contains '/_portfolio/[0-9]{4}-[0-9]{2}-[0-9]{2}' %} <!--Filter out the blog post-->
 	<div class="portfolio" style="margin-bottom:10px;margin-top:4s0px" >
 		<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
 			<a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
