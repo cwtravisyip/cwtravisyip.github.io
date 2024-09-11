@@ -1,0 +1,36 @@
+<!-- Override default behaviour to set up RSS feed template that includes both `_posts` and `_portfolio` collection -->
+
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{ site.title }}</title>
+    <link>{{ site.url }}{{ site.baseurl }}</link>
+    <description>{{ site.description }}</description>
+    <language>en-us</language>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+
+    {% for post in site.posts %}
+      <item>
+        <title>{{ post.title | escape }}</title>
+        <link>{{ post.url | absolute_url }}</link>
+        <!--description>{{ post.excerpt | strip_html | escape }}</description-->
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+      </item>
+    {% endfor %}
+
+    {% for item in site.portfolio %}
+      <item>
+        <title>{{ item.title | escape }}</title>
+        <link>{{ item.url | absolute_url }}</link>
+        <!--description>{{ item.excerpt | strip_html | escape }}</description -->
+        <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
+        <guid isPermaLink="true">{{ item.url | absolute_url }}</guid>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

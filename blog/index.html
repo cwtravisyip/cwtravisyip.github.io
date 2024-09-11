@@ -6,6 +6,11 @@ title: Travis Yip | Blog
 	<ul class="posts">
 
 	  {% for post in site.posts %}
+	  {% if post.path contains '[0-9]{2}-[0-9]{2}-[0-9]{4}' %} <!-- Only include files with DD-MM-YYYY format -->
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
+		{% endif %}
+		{% endfor %}
 	</ul>
+	
+
+	<!--TODO add a photo thumbnail in the page-->

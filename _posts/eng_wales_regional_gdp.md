@@ -5,8 +5,6 @@ subtitle: London's recovery from the COVID-19 outpaced the rest of England and W
 date: 2024-01-22
 img_src: /images/porfolio_of_work/20240122_gdp_gr_by_region_01.png
 tags: dataViz
-
-
 ---
 
 

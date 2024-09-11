@@ -12,7 +12,9 @@ collections:
 # portfolio folder
   portfolio:
     output: true
-  
+  # post folder
+  post:
+    output: true
 
 # Google Analytics
 google_analytics: G-0BEDED78PR
@@ -20,3 +22,8 @@ google_analytics: G-0BEDED78PR
 # RSS feed
 plugins:
   - jekyll-feed
+
+# feed:
+#   collections:
+#     - portfolio
+  

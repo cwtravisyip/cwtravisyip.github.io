@@ -7,9 +7,6 @@ img_src: /images/porfolio_of_work/20240218_trussell_trust_2021.png
 tags: interactive dataViz foodPoverty
 ---
 
-
-
-
 <div style="position: relative; width: 90%; padding-bottom: 60%;margin: 0 auto;">
   <iframe src="/asset/trussell_trust_2021_23.html" 
           style="position: absolute; width: 100%; height: 100%;"
