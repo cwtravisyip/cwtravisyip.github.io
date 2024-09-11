@@ -176,3 +176,8 @@ code {
     padding: .2em;
 
 }
+
+/*Blog post listing spacing */
+ul.posts li {
+    padding: .2em;
+}
