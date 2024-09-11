@@ -2,6 +2,7 @@
 layout: post
 title: "New Year New Me (for once)"
 date: 2024-01-13
+tags: blog-post
 ---
 ![Day Trip to Winchester](/images/blog/20240113.JPG)
 

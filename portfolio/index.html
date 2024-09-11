@@ -33,27 +33,27 @@ title: Travis Yip | Portfolio
 	<!-- Previous Work List -->
 	<h1 class="resume">Latest Work</h1>
 	{% assign sorted_pages = site.posts | sort: 'date' | reverse  %}
-	{% for work in sorted_pages %}
-	{% unless work.name contains '[0-9]{4}-[0-9]{2}-[0-9]{2}' %} <!--Filter out the blog post-->
-	<div class="portfolio" style="margin-bottom:10px;margin-top:4s0px" >
-		<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
-			<a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
-		</div>
+	{% for work in site.posts %}
+		{% unless work.tags contains 'blog-post' %} <!--Filter out the blog post-->
+		<div class="portfolio" style="margin-bottom:10px;margin-top:4s0px" >
+			<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
+				<a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
+			</div>
 
-		<div class="portfolio__content-wrapper">
-			<a href="{{work.url}}" style="color:#595959">
-				<p>
-					<b>{{ work.title }}</b><br>
-					{{work.subtitle}}<br><br>
-					<!-- add tags -->
-					{% for tag in work.tags | split: ' ' %}
-						<code>{{ tag }}</code>		
-					{% endfor %}
-				</p>
-			</a>
+			<div class="portfolio__content-wrapper">
+				<a href="{{work.url}}" style="color:#595959">
+					<p>
+						<b>{{ work.title }}</b><br>
+						{{work.subtitle}}<br><br>
+						<!-- add tags -->
+						{% for tag in work.tags | split: ' ' %}
+							<code>{{ tag }}</code>		
+						{% endfor %}
+					</p>
+				</a>
+			</div>
 		</div>
-	</div>
-	<div style="border-bottom: 1px solid #d5d5d5"></div>
-	{% endunless %}
+		<div style="border-bottom: 1px solid #d5d5d5"></div>
+		{% endunless %}
 	{% endfor %}
 </div><!-- /.textchunk -->
