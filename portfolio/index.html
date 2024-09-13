@@ -3,32 +3,33 @@ layout: default
 title: Travis Yip | Portfolio
 ---
 <div class="textchunk">
-	<!-- Work in Progress -->
-	<h1 class="resume">Work in Progress</h1>
-	{% assign sorted_wips = site.wips | sort: 'date' | reverse  %}
-	{% for work in sorted_wips %}
-	
-	<div class="portfolio" style="margin-bottom:10px;margin-top:10px" >
-		<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
-			<a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
+	{% if site.wips.size > 0 %}
+		<!-- Code chunk to execute if there are .md files in the _wips directory -->
+		<!-- Work in Progress -->
+		<h1 class="resume">Work in Progress</h1>
+		{% assign sorted_wips = site.wips | sort: 'date' | reverse  %}
+		{% for work in sorted_wips %}
+		
+		<div class="portfolio" style="margin-bottom:10px;margin-top:10px" >
+			<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
+				<a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
+			</div>
+
+			<div class="portfolio__content-wrapper">
+				<a href="{{work.url}}" style="color:#595959">
+					<p>
+						<b>{{ work.title }}</b><br>
+						{{work.subtitle}}<br><br>
+					</p>
+				</a>
+				<!-- add tags -->
+				{% for tag in work.tags | split: ' ' %}
+				<code>{{ tag }}</code>		
+				{% endfor %}
+			</div>
 		</div>
-
-		<div class="portfolio__content-wrapper">
-			<a href="{{work.url}}" style="color:#595959">
-				<p>
-					<b>{{ work.title }}</b><br>
-					{{work.subtitle}}<br><br>
-					<!-- add tags -->
-					{% for tag in work.tags | split: ' ' %}
-						<code>{{ tag }}</code>		
-					{% endfor %}
-				</p>
-			</a>
-
-		</div>
-	</div>
-	{% endfor %}
-
+		{% endfor %}
+	{% endif %}
 
 	<!-- Previous Work List -->
 	<h1 class="resume">Latest Work</h1>
@@ -45,12 +46,12 @@ title: Travis Yip | Portfolio
 					<p>
 						<b>{{ work.title }}</b><br>
 						{{work.subtitle}}<br><br>
-						<!-- add tags -->
-						{% for tag in work.tags | split: ' ' %}
-							<code>{{ tag }}</code>		
-						{% endfor %}
 					</p>
 				</a>
+				<!-- add tags -->
+				{% for tag in work.tags | split: ' ' %}
+				<code>{{ tag }}</code>		
+				{% endfor %}
 			</div>
 		</div>
 		<div style="border-bottom: 1px solid #d5d5d5"></div>
