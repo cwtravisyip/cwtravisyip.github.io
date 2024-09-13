@@ -13,6 +13,7 @@ div {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
     color:#595959;
+    text-align: justify;
 }
 
 header div a {
@@ -167,15 +168,34 @@ div.grid__content-wrapper {
     grid-column-end: 17;
 }
 
-code {
-    background-color: #d5d5d5;
-    font-family: 'Courier New', monospace;
-    font-size: .8em;
-    color:#5A7D7C;
-    border-radius: 5%;
-    padding: .2em;
 
-}
+/* Styling for inline code */
+code {
+    background-color: #f5f5f5;
+    font-family: 'Courier New', monospace;
+    padding: 2px 4px;
+    color:#5A7D7C;
+    border-radius: 8px;
+  }
+  
+  /* Styling for block code */
+  pre {
+    background-color: #f5f5f5;
+    font-family: 'Courier New', monospace;
+    color:#5A7D7C;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    border-radius: 8px;
+    overflow-x: auto; /* Handle long code lines */
+  }
+  
+  /* Optional: Add syntax highlighting */
+  pre code {
+    color: #5A7D7C;
+    font-family: 'Courier New', monospace;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  }
 
 /*Blog post listing spacing */
 ul.posts li {
