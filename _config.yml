@@ -13,6 +13,10 @@ collections:
   posts:
     output: true
     permalink: /post/:title/
+  # blog
+  blogs:
+    output: true
+    permalink: /blog/:title
 
 # Google Analytics xl nzlk
 google_analytics: G-0BEDED78PR
@@ -27,7 +31,7 @@ pagination:
   enabled: true
   collection: 'posts'
   per_page: 2
-  title: 'title - page :num'
+  title: 'Travis Yip | Porfolio - page :num'
   category: 'posts'
   permalink: 'portfolio/page=:num/'
 

@@ -4,11 +4,12 @@ title: Travis Yip | Blog
 ---
 	<h1 class="resume">Blog Post</h1>
 	<ul class="posts">
-
-	  {% for post in site.posts %}
-	  {% if post.tags contains 'blog-post' %} <!-- Only include files with DD-MM-YYYY format -->
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-		{% endif %}
+		<!-- sort the blog post by date descending		-->
+		{% assign sorted_blogs = site.blogs | sort: 'date' | reverse %}
+	  	{% for post in sorted_blogs %}
+	<!--	  {% if post.tags contains 'blog-post' %} &lt;!&ndash; Only include files with DD-MM-YYYY format &ndash;&gt;-->
+			<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	<!--		{% endif %}-->
 		{% endfor %}
 	</ul>
 	
