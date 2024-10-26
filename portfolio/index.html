@@ -1,10 +1,9 @@
 ---
 layout: paginated
 title: Travis Yip | Portfolio
-# paginate
 pagination:
     enabled: true
-    permalink: '/page=:num/'
+
 ---
 
 <div class="textchunk">
@@ -44,7 +43,8 @@ pagination:
     <!-- Latest Work -->
     <h1 class="resume">Latest Work</h1>
 
-    {% for work in paginator.posts %}
+    {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+    {% for work in sorted_posts %}
         <div class="portfolio" style="margin-bottom:10px;margin-top:10px">
             <div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
                 <a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
@@ -70,23 +70,21 @@ pagination:
 
     {% endfor %}
 
+<!--    <div class="pagination">-->
+<!--        {% if paginator.previous_page %}-->
+<!--            <a href="{{ paginator.previous_page_path }}" class="pagination__link">Previous</a>-->
+<!--        {% endif %}-->
 
+<!--        <a href="/portfolio/" class="pagination__link">1</a>-->
 
-    <div class="pagination">
-        {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path }}" class="pagination__link">Previous</a>
-        {% endif %}
+<!--        {% for i in (2..paginator.total_pages) %}-->
+<!--            <a href="/portfolio/page={{i}}/" class="pagination__link {% if i == paginator.page %}active{% endif %}">{{ i }}</a>-->
+<!--        {% endfor %}-->
 
-        <a href="/portfolio/" class="pagination__link">1</a>
-
-        {% for i in (2..paginator.total_pages) %}
-            <a href="/portfolio/page={{i}}/" class="pagination__link {% if i == paginator.page %}active{% endif %}">{{ i }}</a>
-        {% endfor %}
-
-        {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="pagination__link">Next</a>
-        {% endif %}
-    </div>
+<!--        {% if paginator.next_page %}-->
+<!--            <a href="{{ paginator.next_page_path }}" class="pagination__link">Next</a>-->
+<!--        {% endif %}-->
+<!--    </div>-->
 
 </div>
 <!-- /.textchunk -->
