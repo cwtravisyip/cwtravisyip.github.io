@@ -16,3 +16,5 @@ gem 'jekyll-feed'
 
 # paginator
 gem 'jekyll-paginate-v2',"~>2.0.0"
+
+gem 'jekyll-paginate'
