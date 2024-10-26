@@ -4,7 +4,9 @@ title: Hurdle to Paris' Sustainable Future
 subtitle: As Paris continues to rebrand itself as a sustainable city, challenges remain with the energy sector limited by the hard infrastructure that glamorizes the city of lights
 date: 2024-01-15
 img_src: /images/porfolio_of_work/240113building_age.png
-tags: dataViz geospatial
+tags: 
+  - dataViz 
+  - geospatial
 ---
 
 ![Building by Construction Pperiod](/images/porfolio_of_work/240113building_age.png)
