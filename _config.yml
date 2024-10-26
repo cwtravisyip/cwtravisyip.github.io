@@ -1,29 +1,35 @@
 name: Travis Yip
 markdown: kramdown
 
-# blog post link
-permalink: /:title
-
-
 collections:
 # # Work in Progress permalink
   wips:
     output: true
-# portfolio folder
-  portfolio:
-    output: true
   # post folder
-  post:
+  posts:
     output: true
+    permalink: /post/:title/
+  # blog
+  blogs:
+    output: true
+    permalink: /blog/:title
 
-# Google Analytics
+# Google Analytics xl nzlk
 google_analytics: G-0BEDED78PR
 
 # RSS feed
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
 
-# feed:
-#   collections:
-#     - portfolio
-  
+# paginate
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 2
+  title: 'Travis Yip | Porfolio - page :num'
+  category: 'posts'
+  permalink: 'portfolio/page=:num/'
+
+permalink: pretty
+

@@ -13,3 +13,6 @@ gem 'kramdown-parser-gfm'
 
 # rss feed
 gem 'jekyll-feed'
+
+# paginator
+gem 'jekyll-paginate-v2',"~>2.0.0"

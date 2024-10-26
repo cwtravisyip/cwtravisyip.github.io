@@ -1,60 +1,110 @@
 ---
-layout: default
+layout: paginated
 title: Travis Yip | Portfolio
+pagination:
+    enabled: true
+    collection: posts
+    permalink: '/page=:num/'
+    per_page: 4
+    sort_field: 'date'
+    sort_reverse: true
 ---
+
 <div class="textchunk">
-	{% if site.wips.size > 0 %}
-		<!-- Code chunk to execute if there are .md files in the _wips directory -->
-		<!-- Work in Progress -->
-		<h1 class="resume">Work in Progress</h1>
-		{% assign sorted_wips = site.wips | sort: 'date' | reverse  %}
-		{% for work in sorted_wips %}
-		
-		<div class="portfolio" style="margin-bottom:10px;margin-top:10px" >
-			<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
-				<a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
-			</div>
 
-			<div class="portfolio__content-wrapper">
-				<a href="{{work.url}}" style="color:#595959">
-					<p>
-						<b>{{ work.title }}</b><br>
-						{{work.subtitle}}<br><br>
-					</p>
-				</a>
-				<!-- add tags -->
-				{% for tag in work.tags | split: ' ' %}
-				<code>{{ tag }}</code>		
-				{% endfor %}
-			</div>
-		</div>
-		{% endfor %}
-	{% endif %}
+    <!-- Work in Progress (Only in the first page) -->
+    <!--  Extract Jekyll feature  -->
+    {% assign current_page = paginator.page | minus: 1 %}
+    {% if current_page == 0 %}
+        {% if site.wips.size > 0 %}
 
-	<!-- Previous Work List -->
-	<h1 class="resume">Latest Work</h1>
-	{% assign sorted_pages = site.posts | sort: 'date' | reverse  %}
-	{% for work in site.posts %}
-		{% unless work.tags contains 'blog-post' %} <!--Filter out the blog post-->
-		<div class="portfolio" style="margin-bottom:10px;margin-top:4s0px" >
-			<div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
-				<a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
-			</div>
+            <h1 class="resume">Work in Progress</h1>
+            {% assign sorted_wips = site.wips | sort: 'date' | reverse %}
+            {% for work in sorted_wips %}
+                <div class="portfolio" style="margin-bottom:10px;margin-top:10px">
+                    <div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
+                        <a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
+                    </div>
 
-			<div class="portfolio__content-wrapper">
-				<a href="{{work.url}}" style="color:#595959">
-					<p>
-						<b>{{ work.title }}</b><br>
-						{{work.subtitle}}<br><br>
-					</p>
-				</a>
-				<!-- add tags -->
-				{% for tag in work.tags | split: ' ' %}
-				<code>{{ tag }}</code>		
-				{% endfor %}
-			</div>
-		</div>
-		<div style="border-bottom: 1px solid #d5d5d5"></div>
-		{% endunless %}
-	{% endfor %}
-</div><!-- /.textchunk -->
+                    <div class="portfolio__content-wrapper">
+                        <a href="{{work.url}}" style="color:#595959">
+                            <p>
+                                <b>{{ work.title }}</b><br>
+                                {{work.subtitle}}<br><br>
+                            </p>
+                        </a>
+                        <!-- add tags -->
+                        {% for tag in work.tags | split: ' ' %}
+                            <code>{{ tag }}</code>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endif %}
+
+
+    <!-- Latest Work -->
+    <h1 class="resume">Latest Work</h1>
+
+    {% for work in paginator.posts %}
+        <div class="portfolio" style="margin-bottom:10px;margin-top:10px">
+            <div class="portfolio__impage-wrapper" onclick="location.href={{ work.url }}">
+                <a href="{{work.url}}"><img src="{{work.img_src}}" alt="" class="center"></a>
+            </div>
+
+            <div class="portfolio__content-wrapper">
+                <a href="{{work.url}}" style="color:#595959">
+                    <p>
+                        <b>{{ work.title }}</b><br>
+                        {{work.subtitle}}<br><br>
+                    </p>
+                </a>
+                <!-- add tags -->
+                {% for tag in work.tags %}
+                    <code>{{tag}}</code>
+                {% endfor %}
+            </div>
+        </div>
+
+        {% unless forloop.last %}
+        <div style="border-bottom: 1px solid #d5d5d5"></div>
+        {% endunless %}
+
+    {% endfor %}
+
+
+
+    <div class="pagination">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="pagination__link">Previous</a>
+        {% endif %}
+
+        <a href="/portfolio/" class="pagination__link">1</a>
+
+        {% for i in (2..paginator.total_pages) %}
+            <a href="/portfolio/page={{i}}/" class="pagination__link {% if i == paginator.page %}active{% endif %}">{{ i }}</a>
+        {% endfor %}
+
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="pagination__link">Next</a>
+        {% endif %}
+    </div>
+
+</div>
+<!-- /.textchunk -->
+
+
+<footer>
+    <div>
+        <ul>
+            <li><a href="mailto:cwtravisyip@gmail.com" target="_blank">Email</a></li>
+            <li><a href="https://github.com/cwtravisyip" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/cwtravis" target="_blank">LinkedIn</a></li>
+            <li><a href="/privacy_note">Privacy Notice</a></li>
+        </ul>
+    </div>
+
+</footer>
+
+
