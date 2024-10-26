@@ -1,10 +1,6 @@
 name: Travis Yip
 markdown: kramdown
 
-# blog post link
-# permalink: /:title
-
-
 collections:
 # # Work in Progress permalink
   wips:
@@ -35,11 +31,5 @@ pagination:
   category: 'posts'
   permalink: 'portfolio/page=:num/'
 
-
-# paginate: 5
-# paginiate_path: "/portfolio/page:num/"
-# paginate: 5
-
 permalink: pretty
 
-url: 'https://cwtravisyip.github.io'
