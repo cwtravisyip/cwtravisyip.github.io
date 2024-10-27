@@ -40,7 +40,7 @@ jobs:
           git checkout gh-pages || git checkout -b gh-pages
           
           # Copy the Jekyll build output to the gh-pages branch
-          rsync -av --delete _site/ .
+          rsync -av --ignore-existing --delete _site/ .
           
           # Check the status and add new changes
           git add .
