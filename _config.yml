@@ -8,7 +8,7 @@ collections:
   # post folder
   posts:
     output: true
-    permalink: /post/:title/
+    permalink: /portfolio/:title/
   # blog
   blogs:
     output: true
@@ -20,17 +20,19 @@ google_analytics: G-0BEDED78PR
 # RSS feed
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
 
-# paginate
-paginate: 5
-paginate_path: /portfolio/page:num
-#  enabled: true
-#  collection: 'posts'
-#  per_page: 2
-#  title: 'Travis Yip | Porfolio - page :num'
-#  category: 'posts'
-#  permalink: 'portfolio/page=:num/'
+# paginate version 1
+#paginate: 5
+#paginate_path: /portfolio/page:num
+
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 2
+  title: 'Travis Yip | Porfolio - page :num'
+  category: 'posts'
+  permalink: 'portfolio/page=:num/'
 
 permalink: pretty
 
