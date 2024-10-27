@@ -11,9 +11,6 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v3
-        # Ensure Node.js 20 is used by specifying node-version for this action
-        with:
-          node-version: '20'
 
       # Setup Node.js to run the actions on Node 20
       - name: Setup Node.js
@@ -36,8 +33,23 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Ensure we are in a clean state before deployment
+          git checkout gh-pages || git checkout -b gh-pages
+          
+          # Copy the Jekyll build output to the gh-pages branch
+          rsync -av --delete _site/ .
+          
+          # Check the status and add new changes
           git add .
-          git commit -m "Build and deploy Jekyll site"
+          git status
+          
+          # Commit only if there are changes
+          git commit -m "Build and deploy Jekyll site" || echo "No changes to commit"
+          
+          # Push changes to gh-pages branch
           git push origin gh-pages
+          env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
