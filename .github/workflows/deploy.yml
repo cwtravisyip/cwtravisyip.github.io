@@ -1,0 +1,34 @@
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      - name: Install dependencies inc Jekyll Paginate-v2
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build the Jekyll site locally
+        run: bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config user.name "cwtravisyip[bot]"
+          git config user.email "cwtravisyip@gmail.com"
+          git add .
+          git commit -m "Build and deploy Jekyll site"
+          git push origin gh-pages
