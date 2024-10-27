@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mark of a New Chapter</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/CSS/main.css">
+
+		
+		<!-- Google tag (gtag.js) excluding privacy note-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0BEDED78PR"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-0BEDED78PR');
+
+
+		(function(g,d,p,r){
+			g[p]=g[p]||function(a,b,c){
+				g[d]=g[d]||{}; 
+				g[d][a]=g[d][a]||[];
+				g[d][a].push([b,c]);
+			};
+		})(window,'GDPRGoogleAnalytics','gdpr');
+			
+		gdpr('dependency', 'https://www.googletagmanager.com/gtm.js?id=XXXXXXXX');
+		<!-- google tag is not deployed-->>
+		
+		</script>
+		
+
+
+
+		
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<a href="/">TRAVIS YIP</a>
+			</div>
+			<!-- MAIN NAVIGATION -->
+			<nav>
+				<ul>
+					<li><a href="/portfolio/">Portfolio</a></li>
+					<li><a href="/resume">Resume</a></li>
+					<li><a href="/blog">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- /.container -->
+        <div class="container">
+            <h1>Mark of a New Chapter</h1>
+<p class="meta">Last Updated: 11 Sep 2024</p>
+
+<div class="post">
+  <p><img src="/images/blog/20240911.JPG" alt="Woodcraft foxes by Lake Akan, Hokkaido Japan" /></p>
+
+<p>This is the second week into my first full-time job! So far, I’ve been enjoying the exposure I get, both in terms of the tech stacks I have to use to complete my task as a data scientist and the domain knowledge I will be picking up to apply data scientist know-how to improve the oepration of the airline!</p>
+
+<p>And with the new job, comes with a new home office set up that got me back on to developing this website and I’m so happy that I finally have a clue on how to set up a newsletter feed. In the coming weeks, I will continue to set up the mailing list and the automation so that when a new blog or work has been published on the site, an email will be send out to the subscriber, depending on the channel they have signed up for. This has got me really exited!</p>
+
+<p>Some updates from the summer, I went back to Hokkaido on a trip with my family. It was a fun experience because I get to be the main driver and it’s always fun to be on a road trip even though the car we rented was rather cramped. I also ended having three interviews within that trip, one that I had to prepare a PowerPoint slides but that feeling coming out of an interview, in the paradise of beer and solitude and went on for BBQ for one was just the best feeling. Anyway, another thing that I was super excited for in this trip was the wood craft store by Lake Akan that we visited last time we were there. The owner of the store is specialised in one product and one product only. But they are an absolute joy to play around. You can stack the foxes together. Put them in a sixty-nine (no errotism intended), or just hand them on some sort of edges like I did. Of course I had to get two more this time round and I just love them poking out from my monitor at the top. If you want to know more about the store, I found this <a href="https://blog.udn.com/rabenta/167625879">blog</a> which you can read more. Unfortunately, I can only find chinese materials but at least it has loads of pictures.</p>
+
+<p>Anyway, until the next post, perhaps the announcement of a mailing list launch!</p>
+
+</div>
+        </div>
+
+		<!--- Add the pop-up HTML structure here -->
+		<div id="popup" class="popup-overlay">
+			<div class="popup-content">
+				<span class="close-btn" onclick="closePopup()">×</span>
+				<h2>Welcome to My Website!</h2>
+				<p>
+					This personal GitHub page employs Google Analytics to record and track the traffic into the site.
+					The data collected is retained for 14 months. <b>By closing this window, you consent the collection of such data.</b><br>
+					<br>
+					For details, please check the <a href = "/privacy_note">privacy note</a>.
+				</p>
+			</div>
+		</div>
+		
+		<footer>
+    		<ul>
+        		<li><a href="mailto:cwtravisyip@gmail.com" target="_blank">Email</a></li>
+        		<li><a href="https://github.com/cwtravisyip" target="_blank">GitHub</a></li>
+				<li><a href="https://linkedin.com/in/cwtravis" target="_blank">LinkedIn</a></li>
+				<li><a href="/privacy_note">Privacy Notice</a></li>
+			</ul>
+		</footer>
+	
+		<!-- Pop-up JavaScript -->
+		<script>
+			// Function to show the pop-up
+			function showPopup() {
+				document.getElementById("popup").style.display = "block";
+			}
+
+			// Function to close the pop-up
+			function closePopup() {
+				document.getElementById("popup").style.display = "none";
+				localStorage.setItem("popupDisplayed", "true"); // Store a flag in localStorage
+			}
+
+			// Check if the pop-up has already been displayed or the current page is privacy note
+			window.onload = function() {
+				// Get the current page URL
+				var currentPage = window.location.pathname;
+
+				// Disable the pop-up on the privacy_note.html page
+				if (currentPage === "/privacy_note/") {
+					return; // Do nothing, i.e., don't show the pop-up
+				}
+
+				// Show the pop-up for other pages if it's the first visit
+				if (!localStorage.getItem("popupDisplayed")) {
+					showPopup(); // Show the pop-up if the user has not seen it before
+				}
+			};
+		</script>
+
+	</body>
+</html>

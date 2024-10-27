@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Travis Yip | Blog</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/CSS/main.css">
+
+		
+		<!-- Google tag (gtag.js) excluding privacy note-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0BEDED78PR"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-0BEDED78PR');
+
+
+		(function(g,d,p,r){
+			g[p]=g[p]||function(a,b,c){
+				g[d]=g[d]||{}; 
+				g[d][a]=g[d][a]||[];
+				g[d][a].push([b,c]);
+			};
+		})(window,'GDPRGoogleAnalytics','gdpr');
+			
+		gdpr('dependency', 'https://www.googletagmanager.com/gtm.js?id=XXXXXXXX');
+		<!-- google tag is not deployed-->>
+		
+		</script>
+		
+
+
+
+		
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<a href="/">TRAVIS YIP</a>
+			</div>
+			<!-- MAIN NAVIGATION -->
+			<nav>
+				<ul>
+					<li><a href="/portfolio/">Portfolio</a></li>
+					<li><a href="/resume">Resume</a></li>
+					<li><a href="/blog">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- /.container -->
+        <div class="container">
+            	<h1 class="resume">Blog Post</h1>
+	<ul class="posts">
+		<!-- sort the blog post by date descending		-->
+		
+	  	
+	<!--	   &lt;!&ndash; Only include files with DD-MM-YYYY format &ndash;&gt;-->
+			<li><span>11 Sep 2024</span> » <a href="/blog/blog-3" title="Mark of a New Chapter">Mark of a New Chapter</a></li>
+	<!--		-->
+		
+	<!--	   &lt;!&ndash; Only include files with DD-MM-YYYY format &ndash;&gt;-->
+			<li><span>21 Jan 2024</span> » <a href="/blog/blog-2" title="Brunch at HoKo">Brunch at HoKo</a></li>
+	<!--		-->
+		
+	<!--	   &lt;!&ndash; Only include files with DD-MM-YYYY format &ndash;&gt;-->
+			<li><span>13 Jan 2024</span> » <a href="/blog/blog-site-launch" title="New Year New Me (for once)">New Year New Me (for once)</a></li>
+	<!--		-->
+		
+	</ul>
+	
+
+	<!--TODO add a photo thumbnail in the page-->
+        </div>
+
+		<!--- Add the pop-up HTML structure here -->
+		<div id="popup" class="popup-overlay">
+			<div class="popup-content">
+				<span class="close-btn" onclick="closePopup()">×</span>
+				<h2>Welcome to My Website!</h2>
+				<p>
+					This personal GitHub page employs Google Analytics to record and track the traffic into the site.
+					The data collected is retained for 14 months. <b>By closing this window, you consent the collection of such data.</b><br>
+					<br>
+					For details, please check the <a href = "/privacy_note">privacy note</a>.
+				</p>
+			</div>
+		</div>
+		
+		<footer>
+    		<ul>
+        		<li><a href="mailto:cwtravisyip@gmail.com" target="_blank">Email</a></li>
+        		<li><a href="https://github.com/cwtravisyip" target="_blank">GitHub</a></li>
+				<li><a href="https://linkedin.com/in/cwtravis" target="_blank">LinkedIn</a></li>
+				<li><a href="/privacy_note">Privacy Notice</a></li>
+			</ul>
+		</footer>
+	
+		<!-- Pop-up JavaScript -->
+		<script>
+			// Function to show the pop-up
+			function showPopup() {
+				document.getElementById("popup").style.display = "block";
+			}
+
+			// Function to close the pop-up
+			function closePopup() {
+				document.getElementById("popup").style.display = "none";
+				localStorage.setItem("popupDisplayed", "true"); // Store a flag in localStorage
+			}
+
+			// Check if the pop-up has already been displayed or the current page is privacy note
+			window.onload = function() {
+				// Get the current page URL
+				var currentPage = window.location.pathname;
+
+				// Disable the pop-up on the privacy_note.html page
+				if (currentPage === "/privacy_note/") {
+					return; // Do nothing, i.e., don't show the pop-up
+				}
+
+				// Show the pop-up for other pages if it's the first visit
+				if (!localStorage.getItem("popupDisplayed")) {
+					showPopup(); // Show the pop-up if the user has not seen it before
+				}
+			};
+		</script>
+
+	</body>
+</html>

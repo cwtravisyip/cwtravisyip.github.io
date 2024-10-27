@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Food Poverty in London in 2023</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/CSS/main.css">
+
+		
+		<!-- Google tag (gtag.js) excluding privacy note-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0BEDED78PR"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-0BEDED78PR');
+
+
+		(function(g,d,p,r){
+			g[p]=g[p]||function(a,b,c){
+				g[d]=g[d]||{}; 
+				g[d][a]=g[d][a]||[];
+				g[d][a].push([b,c]);
+			};
+		})(window,'GDPRGoogleAnalytics','gdpr');
+			
+		gdpr('dependency', 'https://www.googletagmanager.com/gtm.js?id=XXXXXXXX');
+		<!-- google tag is not deployed-->>
+		
+		</script>
+		
+
+
+
+		
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<a href="/">TRAVIS YIP</a>
+			</div>
+			<!-- MAIN NAVIGATION -->
+			<nav>
+				<ul>
+					<li><a href="/portfolio/">Portfolio</a></li>
+					<li><a href="/resume">Resume</a></li>
+					<li><a href="/blog">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- /.container -->
+        <div class="container">
+            <h1>Food Poverty in London in 2023</h1>
+<p class="meta">Last Updated: 18 Feb 2024</p>
+
+<div class="post">
+  <div style="position: relative; width: 90%; padding-bottom: 60%;margin: 0 auto;">
+  <iframe src="/asset/trussell_trust_2021_23.html" style="position: absolute; width: 100%; height: 100%;" frameborder="0">
+  </iframe>
+</div>
+
+<p>This visualisation shows the the number of emergency food parcels Trussell Trust delivered over the the given financial years.
+While the Trust has made their data available across all local authorities in the UK, including Northern Ireland, Scotland, and Wales,
+these data points were not included in this exploratory analysis due to the constraint of computational power.
+Data from 2021 and 2022 is also removed from the interactive plot due to the storage contraint of the server.</p>
+
+<p>While Trussel Trust is one of the major charity providing food to the population at risk of food poverty,
+the data explored in this graph may not be representative. 
+Firstly, this data only includes food parcels distributed by Trussell Trust. 
+Delivery by other independent food banks were not included.
+Secondly, there could be significant spillover effect whereby the recipient of the
+emergency food parcels may collect the proceeding at a location away from their shelter or home.
+Therefore, the aggregates at the borough should be taken with consideration.</p>
+
+<p>The raw data is obtained through the <a href="https://www.trusselltrust.org/wp-content/uploads/sites/2/2023/04/Trussell-Trust-End-of-Year-Statistics-2022-23.xlsx">download link</a>. 
+Trussel Trust also published their analysis on the data on the <a href="https://www.trusselltrust.org/news-and-blog/latest-stats/end-year-stats/">End of Year Stats</a> page.</p>
+
+<p><span style="color:#8F8F8F"><em>Author’s Note:<br />Detailed methodology for the data management process is yet to be published.</em></span></p>
+
+</div>
+        </div>
+
+		<!--- Add the pop-up HTML structure here -->
+		<div id="popup" class="popup-overlay">
+			<div class="popup-content">
+				<span class="close-btn" onclick="closePopup()">×</span>
+				<h2>Welcome to My Website!</h2>
+				<p>
+					This personal GitHub page employs Google Analytics to record and track the traffic into the site.
+					The data collected is retained for 14 months. <b>By closing this window, you consent the collection of such data.</b><br>
+					<br>
+					For details, please check the <a href = "/privacy_note">privacy note</a>.
+				</p>
+			</div>
+		</div>
+		
+		<footer>
+    		<ul>
+        		<li><a href="mailto:cwtravisyip@gmail.com" target="_blank">Email</a></li>
+        		<li><a href="https://github.com/cwtravisyip" target="_blank">GitHub</a></li>
+				<li><a href="https://linkedin.com/in/cwtravis" target="_blank">LinkedIn</a></li>
+				<li><a href="/privacy_note">Privacy Notice</a></li>
+			</ul>
+		</footer>
+	
+		<!-- Pop-up JavaScript -->
+		<script>
+			// Function to show the pop-up
+			function showPopup() {
+				document.getElementById("popup").style.display = "block";
+			}
+
+			// Function to close the pop-up
+			function closePopup() {
+				document.getElementById("popup").style.display = "none";
+				localStorage.setItem("popupDisplayed", "true"); // Store a flag in localStorage
+			}
+
+			// Check if the pop-up has already been displayed or the current page is privacy note
+			window.onload = function() {
+				// Get the current page URL
+				var currentPage = window.location.pathname;
+
+				// Disable the pop-up on the privacy_note.html page
+				if (currentPage === "/privacy_note/") {
+					return; // Do nothing, i.e., don't show the pop-up
+				}
+
+				// Show the pop-up for other pages if it's the first visit
+				if (!localStorage.getItem("popupDisplayed")) {
+					showPopup(); // Show the pop-up if the user has not seen it before
+				}
+			};
+		</script>
+
+	</body>
+</html>

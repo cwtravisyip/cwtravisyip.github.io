@@ -1,0 +1,268 @@
+body {
+    margin: 60px auto;
+    width: 70%;
+}
+
+/* page navigation for portoflio content*/
+.pagination {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+div.pagination__link {
+    text-decoration: none;
+    color: #595959;
+    padding: 10px 15px;
+    margin: 20px;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+}
+
+div.pagination__link.active {
+    background-color: #595959;
+    color: #fff;
+}
+
+div.pagination__link:hover {
+    background-color: #f0f0f0;
+}
+
+/* The style for the header navigation and the footer list*/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+}
+
+div {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    line-height: 1.4em;
+    color:#595959;
+    text-align: justify;
+}
+
+header div a {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 2em;
+    padding: 0px;
+    color:#5A7D7C;
+    display: inline;
+}
+
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+li {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    line-height: 1.4em;
+}
+
+/* portfolio page setting*/
+@media (min-aspect-ratio: 1/1) {
+    div.portfolio {
+        display: grid;
+        grid-template-columns: 1fr 500px;
+        grid-gap: 5%;
+    }
+
+    div.portfolio__image-wrapper {
+    }
+
+    div.portfolio > div img {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+
+    div.portfolio__content-wrapper {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+/* */
+
+/* Style sheet for a tags */
+footer li a {
+    text-decoration: none;
+    color: #999;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: #5A7D7C;
+}
+
+
+/* Style sheet for heading */
+h1 {
+    font-size: 1.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+h2 {
+    font-size: 1em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color:#595959;
+    margin-bottom:0.05em
+}
+
+/* Style sheet for resume*/
+header.resume {
+    font-size: 1em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color:#595959;
+    margin-bottom:0px;
+    padding-bottom: 0px;
+}
+
+h1.resume {
+    font-size: 1.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color:#595959;
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom:0px;
+    padding-bottom: 0px;
+}
+h2.resume {
+    font-size: 1em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color:#595959;
+    margin-bottom:0.05em
+}
+
+/* */
+p {
+    font-size: 1em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    line-height: 1.4em;
+    color: #595959";
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+div.grid {
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-gap: 0px;
+ 
+ }
+
+div.grid__image-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+
+div img {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+div.grid__content-wrapper {
+    padding-right: 40px;
+    padding-left: 40px;
+    grid-column-start: 8;
+    grid-column-end: 17;
+}
+
+
+/* Styling for inline code */
+code {
+    background-color: #f5f5f5;
+    font-family: 'Courier New', monospace;
+    padding: 4px 8px;
+    color:#5A7D7C;
+    border-radius: 8px;
+  }
+  
+/* Styling for block code */
+pre {
+background-color: #f5f5f5;
+font-family: 'Courier New', monospace;
+color:#5A7D7C;
+padding: 10px;
+border-left: 1px solid #ccc;
+border-radius: 8px;
+overflow-x: auto; /* Handle long code lines */
+}
+
+/* Optional: Add syntax highlighting */
+pre code {
+color: #5A7D7C;
+font-family: 'Courier New', monospace;
+background-color: #f5f5f5;
+border-radius: 8px;
+}
+
+/*Blog post listing spacing */
+ul.posts li {
+    padding: .2em;
+}
+
+/* Pop-up Overlay */
+.popup-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 1000; /* High z-index to make sure it’s above all content */
+    backdrop-filter: blur(5px); /* Blurs the background/
+  }
+  
+/* Pop-up Content */
+.popup-content {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #fff;
+padding: 20px;
+width: 60%;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+text-align: justify;
+z-index: 1001;
+border-radius: 8px;
+}
+  
+/* Close Button for Pop Up */
+.close-btn {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 24px;
+cursor: pointer;
+}
+
+
