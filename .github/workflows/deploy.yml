@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v3
+        # Ensure Node.js 20 is used by specifying node-version for this action
+        with:
+          node-version: '20'
 
       # Setup Node.js to run the actions on Node 20
       - name: Setup Node.js
