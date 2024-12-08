@@ -1,0 +1,80 @@
+<!-- Override default behaviour to set up RSS feed template that includes both `_posts` and `_portfolio` collection -->
+
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title></title>
+    <link>http://localhost:4000</link>
+    <description></description>
+    <language>en-us</language>
+    <pubDate>Sun, 08 Dec 2024 13:42:13 +0000</pubDate>
+    <lastBuildDate>Sun, 08 Dec 2024 13:42:13 +0000</lastBuildDate>
+
+    
+      <item>
+        <title>London Heathrow Airport Operation – A Tableau Dashboard</title>
+        <link>http://localhost:4000/portfolio/heathrow_ops_dashboard/</link>
+        <!--description>
+
+
+    
+    
+
+
+
+</description-->
+        <pubDate>Fri, 19 Apr 2024 00:00:00 +0100</pubDate>
+        <guid isPermaLink="true">http://localhost:4000/portfolio/heathrow_ops_dashboard/</guid>
+      </item>
+    
+      <item>
+        <title>Food Poverty in London in 2023</title>
+        <link>http://localhost:4000/portfolio/trussle_trust_2021_23/</link>
+        <!--description>
+  
+  
+
+
+</description-->
+        <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
+        <guid isPermaLink="true">http://localhost:4000/portfolio/trussle_trust_2021_23/</guid>
+      </item>
+    
+      <item>
+        <title>Regional GDP in England and Wales</title>
+        <link>http://localhost:4000/portfolio/eng_wales_regional_gdp/</link>
+        <!--description>
+The latest GDP index published by the ONS shows that England and Wales generated close to 500 billion in 2019 pounds. London alone contributes to 27% of the economic output in the region.
+
+</description-->
+        <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
+        <guid isPermaLink="true">http://localhost:4000/portfolio/eng_wales_regional_gdp/</guid>
+      </item>
+    
+      <item>
+        <title>Food Desert Prediction</title>
+        <link>http://localhost:4000/portfolio/food_desert/</link>
+        <!--description>
+
+</description-->
+        <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+        <guid isPermaLink="true">http://localhost:4000/portfolio/food_desert/</guid>
+      </item>
+    
+      <item>
+        <title>Hurdle to Paris&#39; Sustainable Future</title>
+        <link>http://localhost:4000/portfolio/paris_building_age/</link>
+        <!--description>
+
+</description-->
+        <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+        <guid isPermaLink="true">http://localhost:4000/portfolio/paris_building_age/</guid>
+      </item>
+    
+
+    
+  </channel>
+</rss>

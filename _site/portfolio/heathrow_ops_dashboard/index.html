@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>London Heathrow Airport Operation – A Tableau Dashboard</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/CSS/main.css">
+
+		
+		<!-- Google tag (gtag.js) excluding privacy note-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0BEDED78PR"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-0BEDED78PR');
+
+
+		(function(g,d,p,r){
+			g[p]=g[p]||function(a,b,c){
+				g[d]=g[d]||{}; 
+				g[d][a]=g[d][a]||[];
+				g[d][a].push([b,c]);
+			};
+		})(window,'GDPRGoogleAnalytics','gdpr');
+			
+		gdpr('dependency', 'https://www.googletagmanager.com/gtm.js?id=XXXXXXXX');
+		<!-- google tag is not deployed-->>
+		
+		</script>
+		
+
+
+
+		
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<a href="/">TRAVIS YIP</a>
+			</div>
+			<!-- MAIN NAVIGATION -->
+			<nav>
+				<ul>
+					<li><a href="/portfolio/">Portfolio</a></li>
+					<li><a href="/resume">Resume</a></li>
+					<li><a href="/blog">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- /.container -->
+        <div class="container">
+            <h1>London Heathrow Airport Operation – A Tableau Dashboard</h1>
+<p class="meta">Last Updated: 19 Apr 2024</p>
+
+<div class="post">
+  <div>
+<div class="tableauPlaceholder" id="viz1713564621090" style="position: relative">
+<noscript>
+    <a href="#"><img alt="Dashboard 1 " src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonHeathrowTrafficFlow-17April2024&#47;Dashboard1&#47;1_rss.png" style="border: none" />
+    </a>
+</noscript>
+
+<object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" /> <param name="embed_code_version" value="3" /> <param name="site_root" value="" /><param name="name" value="LondonHeathrowTrafficFlow-17April2024&#47;Dashboard1" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="static_image" value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonHeathrowTrafficFlow-17April2024&#47;Dashboard1&#47;1.png" /> <param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /><param name="language" value="en-GB" />
+</object>
+
+</div>                
+<script type="text/javascript">                    var divElement = document.getElementById('viz1713564621090');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+</div>
+
+<p>On 17 April 2024, there are 1341 scheduled commercial flights at London Health Airport (LHR), connecting passengers to over 179 destinations.</p>
+
+<p>While there are some variations in the number of departing and arriving flights, they are by and large equivalent. Each aircraft is likely to turn around within the same day, constrained by the number of aircraft stands.</p>
+
+<p>In total, there were 23 cancellations, out of which 10 flights were scheduled to operate between Heathrow and Western Asia, including the UAE. These cancellations are likely due to the extreme weather event in the area.</p>
+
+<p>Most flights between London Heathrow were short-haul, with travel departing to/arriving from Europe. Over 40% of the flights were connected to destinations within the region. However, the US was the country with the most connections to Heathrow, contributing to over 260,000 daily passengers to Heathrow.</p>
+
+<p>Over two-thirds of the flights were delayed. Among arrivals, the delay rate was 36%. On the contrary, almost all departure flights were delayed with an average delay time of 40 minutes. All of the 15 flights departing for Eastern Asia were delayed by an average of over an hour.</p>
+
+<p><span style="color:#8F8F8F"><em>Author’s Note:<br />The passenger number is simulated data. The number of passengers for each flight is assumed to be normally distributed at a mean of 200 and a standard deviation of 75. Since the passenger number is determined by the flight, passengers who were transiting through the airport with onward journey are double counted.</em></span></p>
+
+</div>
+        </div>
+
+		<!--- Add the pop-up HTML structure here -->
+		<div id="popup" class="popup-overlay">
+			<div class="popup-content">
+				<span class="close-btn" onclick="closePopup()">×</span>
+				<h2>Welcome to My Website!</h2>
+				<p>
+					This personal GitHub page employs Google Analytics to record and track the traffic into the site.
+					The data collected is retained for 14 months. <b>By closing this window, you consent the collection of such data.</b><br>
+					<br>
+					For details, please check the <a href = "/privacy_note">privacy note</a>.
+				</p>
+			</div>
+		</div>
+		
+		<footer>
+    		<ul>
+        		<li><a href="mailto:cwtravisyip@gmail.com" target="_blank">Email</a></li>
+        		<li><a href="https://github.com/cwtravisyip" target="_blank">GitHub</a></li>
+				<li><a href="https://linkedin.com/in/cwtravis" target="_blank">LinkedIn</a></li>
+				<li><a href="/privacy_note">Privacy Notice</a></li>
+			</ul>
+		</footer>
+	
+		<!-- Pop-up JavaScript -->
+		<script>
+			// Function to show the pop-up
+			function showPopup() {
+				document.getElementById("popup").style.display = "block";
+			}
+
+			// Function to close the pop-up
+			function closePopup() {
+				document.getElementById("popup").style.display = "none";
+				localStorage.setItem("popupDisplayed", "true"); // Store a flag in localStorage
+			}
+
+			// Check if the pop-up has already been displayed or the current page is privacy note
+			window.onload = function() {
+				// Get the current page URL
+				var currentPage = window.location.pathname;
+
+				// Disable the pop-up on the privacy_note.html page
+				if (currentPage === "/privacy_note/") {
+					return; // Do nothing, i.e., don't show the pop-up
+				}
+
+				// Show the pop-up for other pages if it's the first visit
+				if (!localStorage.getItem("popupDisplayed")) {
+					showPopup(); // Show the pop-up if the user has not seen it before
+				}
+			};
+		</script>
+
+	</body>
+</html>

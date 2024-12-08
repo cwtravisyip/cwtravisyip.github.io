@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Travis Yip</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/CSS/main.css">
+
+		
+		<!-- Google tag (gtag.js) excluding privacy note-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0BEDED78PR"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-0BEDED78PR');
+
+
+		(function(g,d,p,r){
+			g[p]=g[p]||function(a,b,c){
+				g[d]=g[d]||{}; 
+				g[d][a]=g[d][a]||[];
+				g[d][a].push([b,c]);
+			};
+		})(window,'GDPRGoogleAnalytics','gdpr');
+			
+		gdpr('dependency', 'https://www.googletagmanager.com/gtm.js?id=XXXXXXXX');
+		<!-- google tag is not deployed-->>
+		
+		</script>
+		
+
+
+
+		
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<a href="/">TRAVIS YIP</a>
+			</div>
+			<!-- MAIN NAVIGATION -->
+			<nav>
+				<ul>
+					<li><a href="/portfolio/">Portfolio</a></li>
+					<li><a href="/resume">Resume</a></li>
+					<li><a href="/blog">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- /.container -->
+        <div class="container">
+            <div class="content">
+	<div class="grid">
+		<div class="grid__image-wrapper">		
+			<img src="/images/profile_pic_090924.jpeg" alt="Travis Yip">
+		</div>
+		<div class="grid__content-wrapper" style="background-color:#EEEEEE;align-items: center;justify-content: center">
+			<h1 style="font-size:3em;font-weight:bold;text-align:center;color:#595959;margin-top:45%">
+				ABOUT ME
+			</h1>
+		</div>
+	</div>
+	<div>
+		<p>
+			Welcome to my page! I am Travis. I am a big data nerd, experience with coding in Python to create static and interactive visualisation. 
+			A recent LSE graduate (MSc Geographic Data Science), I currently work in the Airline Data Solution team at Tui Airways.
+			I role involves helping business owner identify opportunities to optimize the airline's operation to reduce our carbon footprint.
+			I specialise in the applied machine learning methods for quantitative research involving geospatial data. 
+			I also hold a First Class Honours Bachelor's degree in Global Health and Development from the University of Hong Kong, 
+			where I focused on Development Economics.
+			For details, navigate to the <a href="/resume/index.html">resume</a> page.
+		</p>
+		<p>
+			This webpage is developed as part of my 2024 New Year resolution. 
+			Over the year, I will be aiming to post new data stories on the <a href="/portfolio/index.html">portfolio</a> page regularly to hone my skills
+			and share my knowledge. 
+			While some of the content would be new, some are of my previous work. 
+			These include work from school and other work experiences.
+
+		</p>
+
+
+	</div>
+</div><!-- /.content -->
+        </div>
+
+		<!--- Add the pop-up HTML structure here -->
+		<div id="popup" class="popup-overlay">
+			<div class="popup-content">
+				<span class="close-btn" onclick="closePopup()">×</span>
+				<h2>Welcome to My Website!</h2>
+				<p>
+					This personal GitHub page employs Google Analytics to record and track the traffic into the site.
+					The data collected is retained for 14 months. <b>By closing this window, you consent the collection of such data.</b><br>
+					<br>
+					For details, please check the <a href = "/privacy_note">privacy note</a>.
+				</p>
+			</div>
+		</div>
+		
+		<footer>
+    		<ul>
+        		<li><a href="mailto:cwtravisyip@gmail.com" target="_blank">Email</a></li>
+        		<li><a href="https://github.com/cwtravisyip" target="_blank">GitHub</a></li>
+				<li><a href="https://linkedin.com/in/cwtravis" target="_blank">LinkedIn</a></li>
+				<li><a href="/privacy_note">Privacy Notice</a></li>
+			</ul>
+		</footer>
+	
+		<!-- Pop-up JavaScript -->
+		<script>
+			// Function to show the pop-up
+			function showPopup() {
+				document.getElementById("popup").style.display = "block";
+			}
+
+			// Function to close the pop-up
+			function closePopup() {
+				document.getElementById("popup").style.display = "none";
+				localStorage.setItem("popupDisplayed", "true"); // Store a flag in localStorage
+			}
+
+			// Check if the pop-up has already been displayed or the current page is privacy note
+			window.onload = function() {
+				// Get the current page URL
+				var currentPage = window.location.pathname;
+
+				// Disable the pop-up on the privacy_note.html page
+				if (currentPage === "/privacy_note/") {
+					return; // Do nothing, i.e., don't show the pop-up
+				}
+
+				// Show the pop-up for other pages if it's the first visit
+				if (!localStorage.getItem("popupDisplayed")) {
+					showPopup(); // Show the pop-up if the user has not seen it before
+				}
+			};
+		</script>
+
+	</body>
+</html>
