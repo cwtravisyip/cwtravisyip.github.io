@@ -1,23 +1,20 @@
 ---
 layout: paginated
 title: Travis Yip | Portfolio
-# pagination:
-#    enabled: true
-
-# attempt with jekyll-paginate-v2
-pagination:
-    enabled: true
-    collection: posts
-    permalink: '/page=:num/'
-    per_page: 4
-    sort_field: 'date'
-    sort_reverse: true
 ---
 
 <div class="textchunk">
 
-    <!-- Work in Progress (Only in the first page) -->
     <!--  Extract Jekyll feature  -->
+    <!-- <p>Page {{ paginator.page }} of {{ paginator.total_pages }}</p> -->
+
+    <!-- Total Posts -->
+    <!-- <p>Total Posts: {{ paginator.total_posts }}</p> -->
+
+    <!-- Work in Progress (Only in the first page) -->
+
+
+
     {% assign current_page = paginator.page | minus: 1 %}
     {% if current_page == 0 %}
         {% if site.wips.size > 0 %}
@@ -88,7 +85,7 @@ pagination:
         <a href="/portfolio/" class="pagination__link">1</a>
 
         {% for i in (2..paginator.total_pages) %}
-            <a href="/portfolio/page={{i}}/" class="pagination__link {% if i == paginator.page %}active{% endif %}">{{ i }}</a>
+            <a href="/portfolio/page{{i}}/" class="pagination__link {% if i == paginator.page %}active{% endif %}">{{ i }}</a>
         {% endfor %}
 
         {% if paginator.next_page %}
