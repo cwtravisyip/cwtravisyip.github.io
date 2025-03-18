@@ -23,7 +23,7 @@ plugins:
   - jekyll-paginate
 
 # paginate version 1
-paginate: 2
+paginate: 4
 paginate_path: /portfolio/page:num/
 
 permalink: pretty
