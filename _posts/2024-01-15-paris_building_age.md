@@ -9,7 +9,7 @@ tags:
   - geospatial
 ---
 
-![Building by Construction Pperiod](/images/porfolio_of_work/240113building_age.png)
+![Building by Construction Period](/images/porfolio_of_work/240113building_age.png)
 
 Since the pandemic and the years leading up to the 2024 Olympics, the city of Paris has been in the quest to rebrand itself as a sustainable city in line with [the UN's Sustainable Development Goal 11: Sustainable cities and communities](https://sdgs.un.org/goals/goal11). While cities around the world are still recovering from the economic crisis brought about by the COVID-19 Pandemic, Paris has taken advantage of the time to reimagine its city landscape and transform itself into a [15-minute city](https://bigthink.com/strange-maps/15-minute-city-paris/). However, challenges remain, particularly, in reducing its energy footprint.
 
